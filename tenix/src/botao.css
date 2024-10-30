@@ -1,0 +1,43 @@
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup input {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.popup button {
+    margin-top: 10px; 
+    margin-right: 5px; 
+}
+
+
+#abrirLixeira{
+    background-color: none;
+    text-decoration: underline;
+    border-radius: 2px;
+   display: flex;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
