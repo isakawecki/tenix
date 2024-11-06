@@ -5,74 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenix</title>
     <link rel="stylesheet" href="src/style.css">
+    <Meta http-equiv="refresh" content="x" />
 </head>
 <body>
-    <header>
+    <header class="wrapper">
         <h1>Tenix</h1>
     </header>
     <div class="linha">
     </div>
 
     <div class="retangulo">
-      <!--  <button id="abrirLixeira">Abrir Lixeira</button>-->
+
     </div>
     
     <div class="container"> 
         <div class="quadrados" id="tenis1">
             <img src="src/img/tenis1.jpg" alt="Puma180" class="pumafoto">
             <p class="nome">Puma 180</p>
-            <h2 class="preco">R$ 400,99</h2>
+            <h2 class="preco">R$ 400,00</h2>
             <div class="botoes">
                 <button class="botao modificar" id="modificarbotao">Modificar</button>
                 <button class="botao excluir" id="excluirbotao">Excluir</button>
             </div>
         </div>
         <div class="quadrados" id="tenis2">
-            <img src="src/img/tenis1.jpg" alt="Puma180" class="pumafoto">
-            <p class="nome">Puma 180</p>
-            <h2 class="preco">R$ 400,99</h2>
+            <img src="src/img/tenis2.jpg" alt="Puma180" class="pumafoto">
+            <p class="nome">Air force 1</p>
+            <h2 class="preco">R$ 456,99</h2>
             <div class="botoes">
                 <button class="botao modificar" id="modificarbotao">Modificar</button>
                 <button class="botao excluir" id="excluirbotao">Excluir</button>
             </div>
         </div>
         <div class="quadrados" id="tenis3">
-            <img src="src/img/tenis1.jpg" alt="Puma180" class="pumafoto">
-            <p class="nome">Puma 180</p>
-            <h2 class="preco">R$ 400,99</h2>
+            <img src="src/img/tenis3.jpg" alt="Puma180" class="pumafoto">
+            <p class="nome">New Balance 480</p>
+            <h2 class="preco">R$ 350,00</h2>
             <div class="botoes">
                 <button class="botao modificar" id="modificarbotao">Modificar</button>
                 <button class="botao excluir" id="excluirbotao">Excluir</button>
             </div>
         </div>
         <div class="quadrados" id="tenis4">
-            <img src="src/img/tenis1.jpg" alt="Puma180" class="pumafoto">
-            <p class="nome">Puma 180</p>
+            <img src="src/img/tenis4.jpg" alt="Puma180" class="pumafoto">
+            <p class="nome">Adidas VI court base</p>
             <h2 class="preco">R$ 400,99</h2>
             <div class="botoes">
                 <button class="botao modificar" id="modificarbotao">Modificar</button>
                 <button class="botao excluir" id="excluirbotao">Excluir</button>
             </div>
         </div>
+        <div class="quadrados" id="tenis5">
+            <img src="src/img/tenis5.jpg" alt="" class="pumafoto">
+            <p class="nome">Qix preto</p>
+            <h2 class="preco">R$ 259,90</h2>
+            <div class="botoes">
+                <button class="botao modificar" id="modificarbotao">Modificar</button>
+                <button class="botao excluir" id="excluirbotao">Excluir</button>
+            </div>
+        </div>
+        <div class="quadrados" id="tenis6">
+            <img src="src/img/tenis6.jpg" alt="" class="pumafoto">
+            <p class="nome">Mizuno Wave Rider</p>
+            <h2 class="preco">R$ 999,99</h2>
+            <div class="botoes">
+                <button class="botao modificar" id="modificarbotao">Modificar</button>
+                <button class="botao excluir" id="excluirbotao">Excluir</button>
+            </div>
+        </div>
+        <div class="quadrados" id="tenis7">
+            <img src="src/img/tenis7.jpg" alt="" class="pumafoto">
+            <p class="nome">Tênis Upland</p>
+            <h2 class="preco">R$ 649,99</h2>
+            <div class="botoes">
+                <button class="botao modificar" id="modificarbotao">Modificar</button>
+                <button class="botao excluir" id="excluirbotao">Excluir</button>
+            </div>
+        </div>
+      
     </div>
 
 
 
-
-<!--<div id="popupLixeira" style="display:none;">
-    <h2>Lixeira</h2>
-    <div id="lixeira" class="lixeira">
-       
-    </div>
-    <button id="fecharLixeira">Fechar</button>
-</div> -->
 
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <h3>Modificar Nome do Produto</h3>
+            <h3>Modificar produto</h3>
             <input type="text" id="novoNome" placeholder="Novo nome do produto">
             <input type="text" id="novoPreco" placeholder="Novo preço do produto">
+            <br>
             <button id="salvarButton">Salvar</button>
             <button id="closeButton">Fechar</button>
         </div>

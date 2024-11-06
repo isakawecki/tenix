@@ -6,7 +6,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
 }
+
+.wrapper {
+    box-sizing: content-box; 
+    width: 100%; }
 
 h1 {
     background-color: var(--head);
@@ -19,7 +27,6 @@ h1 {
     align-items: center; 
     padding: 20px;
     font-size: 36px;
-    font-style: 'Inter';
     font-weight: 800;
     line-height: 43.57px;
     text-align: left;

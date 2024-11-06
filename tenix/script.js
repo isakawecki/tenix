@@ -37,34 +37,12 @@ document.getElementById("salvarButton").addEventListener("click", function() {
 
 document.querySelectorAll(".excluir").forEach(button => {
     button.addEventListener("click", function() {
-       
         const confirmacao = confirm("Você tem certeza que deseja excluir este produto?");
         
         if (confirmacao) {
             const quadrado = this.closest(".quadrados"); 
-            const lixeira = document.getElementById("lixeira");
-
-          
-            const quadradoClone = quadrado.cloneNode(true);
-            quadradoClone.querySelector(".excluir").textContent = "Restaurar"; 
-            quadradoClone.querySelector(".excluir").addEventListener("click", function() {
-               
-              lixeira.removeChild(quadradoClone); 
-                quadrado.style.display = "block"; 
-            });
-
-            lixeira.appendChild(quadradoClone); 
-            quadrado.style.display = "none"; 
+            quadrado.remove(); 
+            
         }
     });
-});
-
-
-document.getElementById("abrirLixeira").addEventListener("click", function() {
-    document.getElementById("popupLixeira").style.display = "block"; 
-});
-
-
-document.getElementById("fecharLixeira").addEventListener("click", function() {
-    document.getElementById("popupLixeira").style.display = "none"; 
 });
